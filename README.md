@@ -1,2 +1,2 @@
-# mailen-gomez-tp2-pwa
- TP2 MVP - Rick y Morty
+# MVP 'Rick y Morty'
+Nombre: Mailen Gomez - Comisión: DWN3AV
