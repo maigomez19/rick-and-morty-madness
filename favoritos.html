@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Mailen Gomez, DWN3AV PWA</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo-sm" src="img/logo-rm.png" width="120" class="d-inline-block align-top" alt="logo 'Simpsons Madness'">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="material-icons md-18" style="vertical-align: -6px;">menu</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNavAltMarkup">
+                      <div class="navbar-nav d-flex d-lg-inline-flex flex-md-row justify-content-md-between justify-content-lg-start align-items-center pt-1 pt-lg-0">
+                        <a href="index.html" class="p-2 nav-item nav-link col mb-2 mb-lg-0"><span class="material-icons md-18" style="vertical-align: -6px;">home</span> Inicio</a>
+
+                        <a href="favoritos.html" class="p-2 nav-item nav-link col mb-2 mb-lg-0 ml-md-3 mr-md-3"><span class="material-icons md-18" style="vertical-align: -6px;">favorite</span> Favoritos</a>
+
+                        <a href="episodios.html" class="p-2 nav-item nav-link col mb-2 mb-lg-0"><span class="material-icons md-18" style="vertical-align: -6px;">play_circle</span> Episodios</a>
+                      </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="spinner d-none" id="loading">
+            <div class="spinner-border text-info" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <div id="mensaje-usuario"></div>
+
+        <main class="mt-5 mb-5" id="favoritos">
+            <div class="container">
+                <h1 class="text-center mb-2">Favoritos</h1>
+
+                <p class="text-center mb-0 aclaracion">(Ingresa al detalle del personaje si quieres desmarcarlo como favorito)</p>
+
+                <div id="error"></div>
+
+                <ul id="listado-favoritos" class="d-flex row justify-content-center p-0 align-items-center mb-0 mt-3 mt-md-4"></ul>
+
+                <div id="modales-favoritos"></div>
+            </div>
+        </main>
+
+        <footer class="p-2">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row p-0 justify-content-between align-items-center mt-2 mb-2">
+                    <a href="index.html">
+                        <img id="logo-sm2" src="img/logo-rm.png" width="180" alt="logo 'Simpsons Madness'" class="img-fluid mb-2 mb-md-0">
+                    </a>
+
+                    <div class="col-12 col-md-3 col-lg-4 p-0 mb-3 mb-md-0 text-center text-md-right">
+                        <a href="index.html" class="p-2 col"><span class="material-icons md-18" style="vertical-align: -6px;">home</span></a>
+
+                        <a href="favoritos.html" class="p-2 col"><span class="material-icons md-18" style="vertical-align: -6px;">favorite</span></a>
+
+                        <a href="episodios.html" class="p-2 col"><span class="material-icons md-18" style="vertical-align: -6px;">play_circle</span></a>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row p-0 justify-content-between align-items-center mb-3" id="copy">
+                    <p class="mt-3 mb-0 col p-0">&copy; R&M Madness 2022. Todos los derechos reservados.</p>
+                    <p class="mt-3 mb-0 col p-0" id="datos">Mailen Gomez - Escuela Da Vinci TP N°2 PWA</p>
+                </div>
+            </div>
+        </footer>
+
+        
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script src="js/favoritos.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
